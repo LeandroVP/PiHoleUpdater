@@ -1,2 +1,4 @@
 # PiHoleUpdater
-PiHole es un "agujero negro DNS" que evita que los dispositivos conectados a una red obtengan las direcciones ip de los dominios que aparecen en una lista negra. Se pretende crear un servicio en la nube al que se conecten varios dispositivos que funcionen a modo de PiHole para actualizar sus listas negras automáticamente.
+PiHole is a "DNS black hole" that prevents the devices connected to a network to obtain ip addresses listed on a blacklist. We aim to create a cloud service that provides updated lists to PiHole machines on demand.
+
+[Documentation](./docs/documentation.md)
