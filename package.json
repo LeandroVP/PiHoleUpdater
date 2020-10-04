@@ -1,0 +1,35 @@
+{
+  "name": "PiHoleUpdater",
+  "version": "1.0.0",
+  "description": "PiHole is a \"DNS black hole\" that prevents the devices connected to a network to obtain ip addresses listed on a blacklist. We aim to create a cloud service that provides updated lists to PiHole machines on demand.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node ./build/index.js",
+    "start:dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeandroVP/PiHoleUpdater.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeandroVP/PiHoleUpdater/issues"
+  },
+  "homepage": "https://github.com/LeandroVP/PiHoleUpdater#readme"
+}
