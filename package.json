@@ -1,35 +1,66 @@
 {
-  "name": "PiHoleUpdater",
-  "version": "1.0.0",
-  "description": "PiHole is a \"DNS black hole\" that prevents the devices connected to a network to obtain ip addresses listed on a blacklist. We aim to create a cloud service that provides updated lists to PiHole machines on demand.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "dependencies": {
-    "typescript": "^4.0.3"
-  },
-  "devDependencies": {
-    "@types/node": "^14.11.2",
-    "nodemon": "^2.0.4",
-    "rimraf": "^3.0.2",
-    "ts-node": "^9.0.0"
+  "name": "pi-hole-updater",
+  "version": "0.0.1",
+  "description": "Service that provides updated lists to PiHole machines on demand.",
+  "keywords": [
+    "loopback-application",
+    "loopback"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=10.16"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf ./build && tsc",
-    "start": "npm run build && node ./build/index.js",
-    "start:dev": "nodemon"
+    "build": "lb-tsc",
+    "build:watch": "lb-tsc --watch",
+    "lint": "npm run prettier:check && npm run eslint",
+    "lint:fix": "npm run eslint:fix && npm run prettier:fix",
+    "prettier:cli": "lb-prettier \"**/*.ts\" \"**/*.js\"",
+    "prettier:check": "npm run prettier:cli -- -l",
+    "prettier:fix": "npm run prettier:cli -- --write",
+    "eslint": "lb-eslint --report-unused-disable-directives .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "pretest": "npm run clean && npm run build",
+    "test": "lb-mocha --allow-console-logs \"dist/__tests__\"",
+    "posttest": "npm run lint",
+    "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
+    "docker:build": "docker build -t pi-hole-updater .",
+    "docker:run": "docker run -p 3000:3000 -d pi-hole-updater",
+    "migrate": "node ./dist/migrate",
+    "openapi-spec": "node ./dist/openapi-spec",
+    "prestart": "npm run build",
+    "start": "node -r source-map-support/register .",
+    "clean": "lb-clean dist *.tsbuildinfo .eslintcache"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LeandroVP/PiHoleUpdater.git"
+    "type": "git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LeandroVP/PiHoleUpdater/issues"
+  "author": "LeandroVP <leandrovega@correo.ugr.es>",
+  "license": "",
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "dependencies": {
+    "@loopback/boot": "^3.0.1",
+    "@loopback/core": "^2.10.1",
+    "@loopback/repository": "^3.0.1",
+    "@loopback/rest": "^7.0.1",
+    "@loopback/rest-explorer": "^3.0.1",
+    "@loopback/service-proxy": "^3.0.1",
+    "tslib": "^2.0.0"
   },
-  "homepage": "https://github.com/LeandroVP/PiHoleUpdater#readme"
+  "devDependencies": {
+    "@loopback/build": "^6.2.4",
+    "@loopback/eslint-config": "^10.0.0",
+    "@loopback/testlab": "^3.2.6",
+    "@types/node": "^10.17.35",
+    "eslint": "^7.9.0",
+    "source-map-support": "^0.5.19",
+    "typedoc": "^0.19.2",
+    "typescript": "~4.0.2"
+  }
 }

@@ -1,0 +1,185 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>pi-hole-updater</title>
+	<meta name="description" content="Documentation for pi-hole-updater">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">pi-hole-updater</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>pi-hole-updater</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#pi-hole-updater" id="pi-hole-updater" style="color: inherit; text-decoration: none;">
+					<h1>pi-hole-updater</h1>
+				</a>
+				<p>This application is generated using <a href="https://loopback.io/doc/en/lb4/Command-line-interface.html">LoopBack 4 CLI</a> with the
+				<a href="https://loopback.io/doc/en/lb4/Loopback-application-layout.html">initial project layout</a>.</p>
+				<a href="#install-dependencies" id="install-dependencies" style="color: inherit; text-decoration: none;">
+					<h2>Install dependencies</h2>
+				</a>
+				<p>By default, dependencies were installed when this application was generated.
+				Whenever dependencies in <code>package.json</code> are changed, run the following command:</p>
+				<pre><code class="language-sh">npm install</code></pre>
+				<p>To only install resolved dependencies in <code>package-lock.json</code>:</p>
+				<pre><code class="language-sh">npm ci</code></pre>
+				<a href="#run-the-application" id="run-the-application" style="color: inherit; text-decoration: none;">
+					<h2>Run the application</h2>
+				</a>
+				<pre><code class="language-sh">npm start</code></pre>
+				<p>You can also run <code>node .</code> to skip the build step.</p>
+				<p>Open <a href="http://127.0.0.1:3000">http://127.0.0.1:3000</a> in your browser.</p>
+				<a href="#rebuild-the-project" id="rebuild-the-project" style="color: inherit; text-decoration: none;">
+					<h2>Rebuild the project</h2>
+				</a>
+				<p>To incrementally build the project:</p>
+				<pre><code>npm <span class="hljs-keyword">run</span><span class="bash"> build</span></code></pre>
+				<p>To force a full build by cleaning up cached artifacts:</p>
+				<pre><code>npm <span class="hljs-keyword">run</span><span class="bash"> clean</span>
+npm <span class="hljs-keyword">run</span><span class="bash"> build</span></code></pre>
+				<a href="#fix-code-style-and-formatting-issues" id="fix-code-style-and-formatting-issues" style="color: inherit; text-decoration: none;">
+					<h2>Fix code style and formatting issues</h2>
+				</a>
+				<p>If <code>eslint</code> and <code>prettier</code> are enabled for this project, you can use the
+				following commands to check code style and formatting issues.</p>
+				<pre><code class="language-sh">npm run lint</code></pre>
+				<p>To automatically fix such issues:</p>
+				<pre><code class="language-sh">npm run lint:fix</code></pre>
+				<a href="#other-useful-commands" id="other-useful-commands" style="color: inherit; text-decoration: none;">
+					<h2>Other useful commands</h2>
+				</a>
+				<ul>
+					<li><code>npm run migrate</code>: Migrate database schemas for models</li>
+					<li><code>npm run openapi-spec</code>: Generate OpenAPI spec into a file</li>
+					<li><code>npm run docker:build</code>: Build a Docker image for this application</li>
+					<li><code>npm run docker:run</code>: Run this application inside a Docker container</li>
+				</ul>
+				<a href="#tests" id="tests" style="color: inherit; text-decoration: none;">
+					<h2>Tests</h2>
+				</a>
+				<pre><code class="language-sh">npm <span class="hljs-built_in">test</span></code></pre>
+				<a href="#what39s-next" id="what39s-next" style="color: inherit; text-decoration: none;">
+					<h2>What&#39;s next</h2>
+				</a>
+				<p>Please check out <a href="https://loopback.io/doc/en/lb4/">LoopBack 4 documentation</a> to
+				understand how you can continue to add features to this application.</p>
+				<p><a href="http://loopback.io/"><img src="https://github.com/strongloop/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png" alt="LoopBack"></a></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/___tests___acceptance_test_helper_.html">&quot;__tests__/acceptance/test-<wbr>helper&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_application_.html">&quot;application&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_controllers_index_.html">&quot;controllers/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_controllers_ping_controller_.html">&quot;controllers/ping.controller&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_index_.html">&quot;index&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_migrate_.html">&quot;migrate&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_openapi_spec_.html">&quot;openapi-<wbr>spec&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_sequence_.html">&quot;sequence&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
