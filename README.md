@@ -1,5 +1,7 @@
 # pi-hole-updater
 
+PiHole is a "DNS black hole" that prevents the devices connected to a network to obtain ip addresses listed on a blacklist. We aim to create a cloud service that provides updated lists to PiHole machines on demand.
+
 This application is generated using [LoopBack 4 CLI](https://loopback.io/doc/en/lb4/Command-line-interface.html) with the
 [initial project layout](https://loopback.io/doc/en/lb4/Loopback-application-layout.html).
 
