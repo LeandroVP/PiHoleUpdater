@@ -1,5 +1,5 @@
 {
-  "name": "PiHoleUpdater",
+  "name": "pi-hole-updater",
   "version": "1.0.0",
   "description": "PiHole is a \"DNS black hole\" that prevents the devices connected to a network to obtain ip addresses listed on a blacklist. We aim to create a cloud service that provides updated lists to PiHole machines on demand.",
   "main": "index.js",
@@ -21,8 +21,8 @@
     "url": "git+https://github.com/LeandroVP/PiHoleUpdater.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Leandro Vega Palma",
+  "license": "GNU GPLv3",
   "bugs": {
     "url": "https://github.com/LeandroVP/PiHoleUpdater/issues"
   },
