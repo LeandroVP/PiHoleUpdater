@@ -19,5 +19,12 @@ We will use Typescript as a programming language. It is one of the most used lan
 - Execute the generated file with node :
 ´node ./build/index.js´
 
+# Execution
+
+To properly execute the scripts, it is necessary to install nodemon and rimraf. 
+Nodemon will provide a cold reloading utility and rimraf will clean the directory on each run.
+To start the application, execute 
+ > npm run start
+
 
 [Documentation](./docs/documentation.md)
