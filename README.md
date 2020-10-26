@@ -3,9 +3,9 @@ PiHole is a "DNS black hole" that prevents the devices connected to a network to
 
 Users should be able to do the following actions when the final state of development is reached:
 
-- [Get a black list (UH1)](https://github.com/LeandroVP/PiHoleUpdater/issues/6)
-- [Insert a new element into a black list (UH2)](https://github.com/LeandroVP/PiHoleUpdater/issues/7)
-- [Add a complete new black list (UH3)](https://github.com/LeandroVP/PiHoleUpdater/issues/8)
+- [Get a black list (US1)](https://github.com/LeandroVP/PiHoleUpdater/issues/6)
+- [Insert a new element into a black list (US2)](https://github.com/LeandroVP/PiHoleUpdater/issues/7)
+- [Add a complete new black list (US3)](https://github.com/LeandroVP/PiHoleUpdater/issues/8)
 
 # Technologies
 
