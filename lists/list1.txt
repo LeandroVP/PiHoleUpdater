@@ -1,1 +1,4 @@
 # Add here the routes to the undesired sites
+www.google.com
+www.facebook.com
+www.myweb.es
