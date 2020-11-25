@@ -1,1 +1,9 @@
-entidad: src/index.ts
+entidad: 
+- src/index.ts
+- links.ts
+
+lenguaje: Typescript
+
+test: filesTest.ts
+
+taskfile: packaje.json
