@@ -6,4 +6,4 @@ lenguaje: Typescript
 
 test: filesTest.ts
 
-taskfile: packaje.json
+taskfile: package.json
