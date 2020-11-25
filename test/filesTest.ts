@@ -1,9 +1,9 @@
 import { NewLink, NewLinkList } from "./../src/models/link.model";
-import { PiHoleUpdater } from "../src/index";
+import { LinkManager } from "../src/links";
 import { expect } from "chai";
 
 describe("PiHoleUpdater tests", () => {
-  const piHoleUpdater = new PiHoleUpdater();
+  const linkManager = new LinkManager();
 
   const linkTest: NewLink = {
     name: "test",
@@ -18,20 +18,20 @@ describe("PiHoleUpdater tests", () => {
 
 
   it("Adding a new link", () => {
-    expect(piHoleUpdater.addLink(linkTest), "addLink Test")
+    expect(linkManager.addLink(linkTest), "addLink Test")
       .to.be.an("object")
       .to.have.property("id")
       .to.equal("0000000000000001");
   });
 
   it("Adding a new List", () => {
-    expect(piHoleUpdater.addList(listTest), "addList Test")
+    expect(linkManager.addList(listTest), "addList Test")
       .to.be.an("object")
       .to.have.property("id")
       .to.equal("0000000000000001");
   });
   
   it("Displaying list", () => {
-    expect(piHoleUpdater.showLinks(), "Show link lists").to.be.an("string");
+    expect(linkManager.showLinks(), "Show link lists").to.be.an("string");
   })
 });
