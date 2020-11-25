@@ -27,3 +27,9 @@ In this project we are currently using three different configuration files:
 - [tsconfig.json](../tsconfig.json): Compiler options required to transform the Typescript code into JavaScript code.
 
 - [nodemon.json](../nodemon.json): Directories and files that would trigger a recompilation if modified.
+
+# Working tests
+
+You can check our [test folder](../test). So far, we have tested the link[#24](https://github.com/LeandroVP/PiHoleUpdater/issues/24) and the list [#25](https://github.com/LeandroVP/PiHoleUpdater/issues/25).
+
+
